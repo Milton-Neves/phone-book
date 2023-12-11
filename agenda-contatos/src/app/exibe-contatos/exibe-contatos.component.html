@@ -1,0 +1,24 @@
+<!-- exibe-contatos.component.html -->
+<div>
+  <h2>Contatos Cadastrados</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Email</th>
+        <th>Aniversário</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contato of contatos">
+        <td>{{ contato.nome }}</td>
+        <td>{{ contato.telefone }}</td>
+        <td>{{ contato.email }}</td>
+        <td>{{ contato.aniversario | date : "dd/MM/yyyy" }}</td>
+        <td>{{ contato.tipo }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

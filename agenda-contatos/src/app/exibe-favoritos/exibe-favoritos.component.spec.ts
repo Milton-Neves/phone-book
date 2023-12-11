@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ConfirmDialogComponent } from './confirm-dialog.component';
+import { ExibeFavoritosComponent } from './exibe-favoritos.component';
 
-describe('ConfirmDialogComponent', () => {
-  let component: ConfirmDialogComponent;
-  let fixture: ComponentFixture<ConfirmDialogComponent>;
+describe('ExibeFavoritosComponent', () => {
+  let component: ExibeFavoritosComponent;
+  let fixture: ComponentFixture<ExibeFavoritosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ConfirmDialogComponent]
+      imports: [ExibeFavoritosComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ConfirmDialogComponent);
+    fixture = TestBed.createComponent(ExibeFavoritosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

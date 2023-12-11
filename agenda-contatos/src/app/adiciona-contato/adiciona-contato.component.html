@@ -1,1 +1,54 @@
+<!-- adiciona-contato.component.html -->
+<div>
+  <h2>Adicionar Contato</h2>
+  <form (submit)="adicionarContato()">
+    <label for="nome">Nome:</label>
+    <input
+      type="text"
+      id="nome"
+      name="nome"
+      ngModel="novoContato.nome"
+      required
+    />
 
+    <label for="telefone">Telefone:</label>
+    <input
+      type="text"
+      id="telefone"
+      name="telefone"
+      ngModel="novoContato.telefone"
+      required
+    />
+
+    <label for="email">E-mail:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      ngModel="novoContato.email"
+      required
+    />
+    <div *ngIf="form.controls['email'].hasError('email')">
+      Por favor, insira um e-mail válido.
+    </div>
+
+    <label for="aniversario">Aniversário:</label>
+    <input
+      type="text"
+      id="aniversario"
+      name="aniversario"
+      ngModel="novoContato.aniversario"
+      required
+    />
+
+    <label for="tipo">Tipo:</label>
+    <select id="tipo" name="tipo" ngModel="novoContato.tipo" required>
+      <option value="Amigo">Amigo(a)</option>
+      <option value="Familia">Família</option>
+      <option value="Trabalho">Trabalho</option>
+      <option value="Outro">Outro</option>
+    </select>
+
+    <button type="submit">Adicionar Contato</button>
+  </form>
+</div>

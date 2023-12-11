@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContatosComponent } from './contatos.component';
+import { ExibeContatosComponent } from './exibe-contatos.component';
 
-describe('ContatosComponent', () => {
-  let component: ContatosComponent;
-  let fixture: ComponentFixture<ContatosComponent>;
+describe('ExibeContatosComponent', () => {
+  let component: ExibeContatosComponent;
+  let fixture: ComponentFixture<ExibeContatosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContatosComponent]
+      imports: [ExibeContatosComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ContatosComponent);
+    fixture = TestBed.createComponent(ExibeContatosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
