@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.component';
 import { Contact, ContactType } from './contatos.model';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contatos',

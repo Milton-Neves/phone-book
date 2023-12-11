@@ -16,6 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
+    FormsModule,
     MatSelectModule,
     MatIconModule,
   ],
