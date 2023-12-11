@@ -1,5 +1,10 @@
 // contatos.model.ts
-export type ContactType = 'Amigo(a)' | 'Família' | 'Trabalho' | 'Outro';
+export enum ContactType {
+  Trabalho = 'Trabalho',
+  Familia = 'Familia',
+  Amigo = 'Amigo',
+  Outro = 'Outro',
+}
 
 export interface Contact {
   id: number;
@@ -10,4 +15,3 @@ export interface Contact {
   tipo: ContactType;
   favorite: boolean;
 }
-
