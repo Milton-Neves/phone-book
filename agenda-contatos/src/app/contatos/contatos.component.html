@@ -73,21 +73,21 @@
       <div class="contato-header">
         <mat-icon
           class="edit-icon"
-          [aria-label]="'Editar ' + contato.nome"
+          [attr.aria-label]="'Editar ' + contato.nome"
           (click)="editContact(contato)"
         >
           edit
         </mat-icon>
         <mat-icon
           class="delete-icon"
-          [aria-label]="'Excluir ' + contato.nome"
+          [attr.aria-label]="'Excluir ' + contato.nome"
           (click)="deleteContact(contato)"
         >
           delete
         </mat-icon>
         <mat-icon
           class="favorite-icon"
-          [aria-label]="'Favorito ' + contato.nome"
+          [attr.aria-label]="'Favorito ' + contato.nome"
           (click)="toggleFavorite(contato)"
           [ngClass]="{ favorite: contato.favorite }"
         >
