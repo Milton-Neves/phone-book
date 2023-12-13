@@ -31,15 +31,6 @@
       Por favor, insira um e-mail válido.
     </div>
 
-    <label for="aniversario">Aniversário:</label>
-    <input
-      type="text"
-      id="aniversario"
-      name="aniversario"
-      ngModel="novoContato.aniversario"
-      required
-    />
-
     <label for="tipo">Tipo:</label>
     <select id="tipo" name="tipo" ngModel="novoContato.tipo" required>
       <option value="Amigo">Amigo(a)</option>
@@ -49,5 +40,6 @@
     </select>
 
     <button type="submit">Adicionar Contato</button>
+    <!-- <button (click)="listarContatos()">Listar Contatos</button> -->
   </form>
 </div>

@@ -9,7 +9,6 @@ export class Contato {
   private _nome: string;
   private _telefone: string;
   private _email: string;
-  private _aniversario: string;
   private _tipo: TipoContato;
   private _favorito: boolean;
 
@@ -17,13 +16,11 @@ export class Contato {
     nome: string,
     telefone: string,
     email: string,
-    aniversario: string,
     tipo: TipoContato
   ) {
     this._nome = nome;
     this._telefone = telefone;
     this._email = email;
-    this._aniversario = aniversario;
     this._tipo = tipo;
     this._favorito = false;
   }
@@ -50,14 +47,6 @@ export class Contato {
 
   set email(email: string) {
     this._email = email;
-  }
-
-  get aniversario(): string {
-    return this._aniversario;
-  }
-
-  set aniversario(aniversario: string) {
-    this._aniversario = aniversario;
   }
 
   get tipo(): TipoContato {

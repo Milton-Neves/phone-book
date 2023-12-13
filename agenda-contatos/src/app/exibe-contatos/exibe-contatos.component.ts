@@ -16,7 +16,9 @@ export class ExibeContatosComponent implements OnInit {
     this.contatos = this.agendaService.obterContatos();
   }
 
-  ngOnInit(): void {
-    // this.contatos = this.agendaService.obterContatos();
+  ngOnInit(): void {}
+
+  listarContatos(): void {
+    this.contatos = this.agendaService.obterContatos();
   }
 }
