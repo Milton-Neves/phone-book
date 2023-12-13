@@ -1,4 +1,3 @@
-// agenda.service.ts
 import { Injectable } from '@angular/core';
 import { Contato, TipoContato } from '../contato.model';
 

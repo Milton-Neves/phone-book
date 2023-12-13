@@ -1,4 +1,3 @@
-// contato.model.ts
 export enum TipoContato {
   Amigo = 'Amigo(a)',
   Familia = 'Família',
@@ -10,7 +9,7 @@ export class Contato {
   private _nome: string;
   private _telefone: string;
   private _email: string;
-  private _aniversario: string; // ou Date se preferir
+  private _aniversario: string;
   private _tipo: TipoContato;
   private _favorito: boolean;
 
@@ -26,10 +25,9 @@ export class Contato {
     this._email = email;
     this._aniversario = aniversario;
     this._tipo = tipo;
-    this._favorito = false; // Inicialmente, não é favorito
+    this._favorito = false;
   }
 
-  // Métodos para acessar e modificar os atributos
   get nome(): string {
     return this._nome;
   }
