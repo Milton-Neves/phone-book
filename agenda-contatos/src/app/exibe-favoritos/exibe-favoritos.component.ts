@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AgendaService } from '../agenda.service';
 import { Contato } from '../contato.model';
-import { AgendaService } from '../services/agenda.service';
 
 @Component({
   selector: 'app-exibe-favoritos',

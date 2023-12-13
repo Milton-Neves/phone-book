@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Contato } from '../contato.model';
-import { AgendaService } from '../services/agenda.service';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { AgendaService } from '../agenda.service';
 
 @Component({
   selector: 'app-exibe-contatos',
