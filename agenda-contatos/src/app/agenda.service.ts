@@ -18,10 +18,10 @@ export class AgendaService {
   obterContatosFavoritos(): Contato[] {
     return this.contatos.filter((contato) => contato.favorito);
   }
-  marcarComoFavorito(id: number): void {
-    const contato = this.contatos.find((c) => id === id);
-    if (contato) {
-      contato.favorito = true;
-    }
-  }
+  // marcarComoFavorito(id: number): void {
+  //   const contato = this.contatos.find((c) => c.id === id);
+  //   if (contato) {
+  //     contato.favorito = true;
+  //   }
+  // }
 }
